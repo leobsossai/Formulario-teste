@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B7Web - Formulário clone</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/template.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header_class">
+        <div class="bg"></div>
+        <div class="title_content">
+            <div class="title"><h1>B7Web Clone</h1></div>
+            <div class="sub_title"><h2>Do zero ao Full-stack</h2></div>
+        </div>
+        <div class="home">
+            <a href="#">
+                <span class="material-symbols-outlined">in_home_mode</span>
+            </a>
+        </div>
+        <div class="containerBG"></div>
+    </header>
+
+    <main class="main_class">
+        <div class="main_video">
+            <div class="bg main"></div>
+            <h4>Curso de desenvolvimento <span>full-stack completo</span></h4>
+            <div class="video_access">
+                <div class="access">
+                    <img src="assets/images/fullstack.jpg" alt="pacote fullstack">
+                    <p>Curso Full-stack</p>
+                    <button>Acessar curso</button>
+                </div>
+                <div class="access">
+                    <img src="assets/images/html5-e-css3.jpg" alt="html5 e css3">
+                    <p>Curso grátis de JAVA</p>
+                    <button>Acessar curso</button>
+                </div>
+                <div class="access">
+                    <img src="assets/images/curso gratis.jpg" alt="Curso grátis">
+                    <p>Curso grátis de HTML e CSS</p>
+                    <button>Acessar curso</button>
+                </div>
+            </div>
+            <video playsinline autoplay muted loop src="assets/videos/video.mp4"></video>
+        </div>
+        <div class="main_form">
+            <div id="form">
+                <div id="form_header">
+                    <span>Cadastre-se</span>
+                    <button class="button_enter">Entrar</button>
+                </div>
+                <form action="#">
+                    <div class="name_form">
+                        <label for="fname">Nome<input type="text" autofocus required minlength="2"></label>
+                        <label for="flastname">Sobrenome<input type="text"></label>
+                    </div>
+                    <div class="email_form">
+                        <label for="femail">E-mail<input type="email" placeholder="seuemail@exemplo.com" required></label>
+                        <label for="femailconfirm">Confirme seu e-mail<input type="email" placeholder="digite seu e-mail novamente" required></label>
+                    </div>
+                    <div class="phone-birth_form">
+                        <label for="fphone">Celular<input type="tel" placeholder="+55 (00) 99999-9999" maxlength="14"></label>
+                        <label for="fbirth">Nascimento<input type="date" required></label>
+                    </div>
+                    <div class="sex_form">
+                        <div class="title_form">Sexo:</div>
+                        <div class="radio_content" >
+                            <label class="options" >
+                                <input type="radio" value="masculino" name="sex" required>Masculino
+                            </label>
+                            <label class="options">
+                                <input type="radio" value="feminio" name="sex" required>Feminino
+                            </label>
+                            <label class="options">
+                                <input type="radio" value="nao informar" name="sex" required>Prefiro não informar
+                            </label>
+                        </div>
+                        <label><input type="text" placeholder="Outro" required></label>
+                    </div>
+                    <div class="objective_form">
+                        <div class="title_form">Objetivo profissional:</div>
+                        <div class="checkbox_content">
+                            <label class="options">
+                                <input type="checkbox" required>Novo emprego
+                            </label>
+                            <label class="options">
+                                <input type="checkbox" required>Melhorar meu cargo
+                            </label>
+                            <label class="options">
+                                <input type="checkbox" readonly>Não possuo
+                            </label>
+                        </div>
+                        <label><input type="text" placeholder="Outro" required></label>
+                    </div>
+                    <button class="button_enter">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer_class">
+        <div class="bg"></div>
+        <p>Desenvolvido por <span>Leonardo Bueno Sossai</span>. Copywriting 2022</p>
+        <div class="containerBG"></div>
+    </footer>
+</body>
+
+</html>
